@@ -1,18 +1,17 @@
 #### Classification using Naive Bayes
 
-In this classification the classic MNIST data files are used from : [MNIST](http://yann.lecun.com/exdb/mnist/)
+In this classification the classic MNIST data files are used from : [MNIST](http://yann.lecun.com/exdb/mnist/).
+The task is to classify the digits given the labels and report the accuracy.
 
-1. **generate_data.py** : Generates the required randomm sample of data
-2. **LinearClassify.py** : Computes the maximum likelihood least squares
-3. **lin_class_multi_data.py** : Classifies the dataset as belonging to either class for the sampled datapoints. Here we generate 10 X 1000     samples.
-4. **lin_class.py** : Similar as above, but generates a single sample of 5000 points.
+1. **naive_bayes.py** : Implements the classic Naive Bayes algorithm in pure python. This converts the discrete values images to binary using a threshold parameter.
+2. **naive_bayes_gaussian.py** : Implements the Naive Bayes using Gaussian probability distribution. Here it is continuous instead of categorical. Type 1 and Type 2 errors are calculated and a ROC curve is plotted.
+3. **nn_classifier.py** : Classic Neares Neighbor alogrithm to predict the labels. A pure python based k- fold cross validation is performed to determine the accurate k value.
 
-To test the classifier , run either **lin_class.py** or **lin_class_multi_data.py**. Output is visualized using Matplotlibs plotting functions
-
-
-##### KD Trees
-1. **KDTRee.py** : A standard K-d tree implementation. Used to classify the datapoints generated from Gaussian samples by looking up the nearest neughbors.
-2. **KDTree_Multi.py** : Similar implementation as above but classifies 10 X 1000 samples.
+##### Datasets
+1. **t10k-images.idx3-ubyte** : Images files used for testing.
+2. **t10k-labels.idx1-ubyte** : Image labels for verification.
+3. **train-labels.idx1-ubyte** : Image labels used for training.
+4. **train-images.idx3-ubyte** : Not attached due to size limitations. This is the training image data file. Train the classifiers using this file.
 
 
-To test this classifier , run either **KDTRee.py** or **KDTree_Multi.py**. Output is visualized using Matplotlibs plotting functions
+To test this classifier , run either **naive_bayes.py** , **naive_bayes_gaussian.py** or **nn_classifier.py**.
