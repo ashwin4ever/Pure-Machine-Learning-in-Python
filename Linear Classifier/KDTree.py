@@ -1,5 +1,5 @@
 '''
-CS 5793 AI 2
+CS 5793 AI-2
 
 Basic Classifiers
 
