@@ -8,3 +8,11 @@ The dataset is generated randomly from a 2D multivariate Gaussian distribution. 
 4. **lin_class.py** : Similar as above, but generates a single sample of 5000 points.
 
 To test the classifier , run either **lin_class.py** or **lin_class_multi_data.py**. Output is visualized using Matplotlibs plotting functions
+
+
+## KD Trees
+1. **KDTRee.py** : A standard K-d tree implementation. Used to classify the datapoints generated from Gaussian samples by looking up the nearest neughbors.
+2. **KDTree_Multi.py** : Similar implementation as above but classifies 10 X 1000 samples.
+
+
+To test this classifier , run either **KDTRee.py** or **KDTree_Multi.py**. Output is visualized using Matplotlibs plotting functions
